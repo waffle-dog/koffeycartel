@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stack>
+#include <string>
+
+using namespace std;
+
+int main() {
+    stack<int> idStack;
+
+    idStack.push(10245);
+    idStack.push(28252);
+    idStack.push(50556);
+    idStack.push(12347);
+    idStack.push(77778);
+    idStack.push(16255);
+    idStack.push(12932);
+    idStack.push(11234);
+
+    cout << "IDs (in reverse order)" << endl;
+    
+
+    while (!idStack.empty()) {
+        cout << idStack.top() << endl;
+        idStack.pop();
+    }
+
+    return 0;
+}
